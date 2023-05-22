@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>   
+<html>  
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<title>Walking Club Events</title>
+</head>
+<body>
+    <section class="walk-events">
+	<h2 class="section-title">Walk Events</h2>
+
+	<!-- Form to add a new walk event -->
+	<form class="add-walk-event-form">
+		<label for="name">Name of Walk:</label>
+		<input type="text" id="name" name="name" required><br>
+
+		<label for="date">Date of Walk:</label>
+		<input type="date" id="date" name="date" required><br>
+
+		<label for="start-time">Start Time:</label>
+		<input type="time" id="start-time" name="start-time" required><br>
+
+		<label for="duration">Duration:</label>
+		<input type="number" id="duration" name="duration" required> hours<br>
+
+		<label for="meeting-point">Meeting Point:</label>
+		<input type="text" id="meeting-point" name="meeting-point" required><br>
+
+		<label for="distance">Distance in miles:</label>
+		<input type="number" id="distance" name="distance" required><br>
+
+		<label for="leader">Name of walk leader:</label>
+		<input type="text" id="leader" name="leader" required><br>
+
+		<label for="contact-number">Contact number:</label>
+		<input type="tel" id="contact-number" name="contact-number" required><br>
+
+		<label for="comments">Comments:</label>
+		<textarea id="comments" name="comments"></textarea><br>
+
+		<label for="status">Status:</label>
+		<select id="status" name="status" required>
+			<option value="proposed">Proposed</option>
+			<option value="approved">Approved</option>
+			<option value="rejected">Rejected</option>
+		</select><br>
+
+		<input type="submit" value="Add Walk Event">
+	</form>
+
+	<!-- Table to display existing walk events -->
+	<table class="walk-events-table">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Date</th>
+				<th>Start Time</th>
+				<th>Duration</th>
+				<th>Meeting Point</th>
+				<th>Distance</th>
+				<th>Leader</th>
+				<th>Contact Number</th>
+				<th>Comments</th>
+				<th>Status</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>High Watcombe to Walton</td>
+				<td>15/06/2023</td>
+				<td>10:30 AM</td>
+				<td>2 hours</td>
+				<td>High Watcombe Park Entrance A</td>
+				<td>9</td>
+				<td>Helen Smith</td>
+				<td>07774075441</td>
+				<td>Grade A walk with steep hills</td>
+				<td>Approved</td>
+			</tr>
+			
+		</tbody>
+	</table>
+</section>
+<section class="other-events">
+	<h2 class="section-title">Other Events</h2>
+
+  <!-- Form to add a new other event -->
+<form class="add-other-event-form">
+	<label for="name">Name of Event:</label>
+	<input type="text" id="name" name="name" required><br>
+
+	<label for="date">Date of Event:</label>
+	<input type="date" id="date" name="date" required><br>
+
+	<label for="type">Type of Event:</label>
+	<input type="text" id="type" name="type" required><br>
+
+	<label for="start-time">Start Time:</label>
+	<input type="time" id="start-time" name="start-time" required><br>
+
+	<label for="duration">Duration:</label>
+	<input type="number" id="duration" name="duration" required> hours<br>
+
+	<label for="location">Location:</label>
+	<input type="text" id="location" name="location" required><br>
+
+	<input type="submit" value="Add Other Event">
+</form>
+
+<!-- Table to display existing other events -->
+<table class="other-events-table">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Date</th>
+			<th>Type</th>
+			<th>Start Time</th>
+			<th>Duration</th>
+			<th>Location</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Club Dinner</td>
+			<td>25/07/2023</td>
+			<td>Social</td>
+			<td>7:00 PM</td>
+			<td>3 hours</td>
+			<td>The Bay View Restaurant</td>
+		</tr>
+		
+	</tbody>
+</table>
+</section>  
+
+</body>
+</html>

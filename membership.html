@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>   
+<html>  
+<head>
+<link rel="stylesheet" type="text/css" href="membership.css">
+<title>Membership Management</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Membership Management</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Full Name</th>
+              <th scope="col">Date of Birth</th>
+              <th scope="col">Email Address</th>
+              <th scope="col">Phone Number</th>
+              <th scope="col">Home Address</th>
+              <th scope="col">Alternative Contact Number</th>
+              <th scope="col">Password</th>
+              <th scope="col">Payment Method</th>
+              <th scope="col">Announcement Emails</th>
+              <th scope="col">Status</th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Repeat for each member -->
+            <tr>
+              <th scope="row">1</th>
+              <td>John Smith</td>
+              <td>01/01/1990</td>
+              <td>john.smith@example.com</td>
+              <td>07774075441</td>
+              <td>123 Main Street</td>
+              <td>07774075442</td>
+              <td>********</td>
+              <td>PayPal</td>
+              <td>Yes</td>
+              <td>
+                <select class="status-dropdown">
+                  <option value="active">Active</option>
+                  <option value="inactive">Inactive</option>
+                </select>
+              </td>
+              <td>
+                <button class="edit-button">Edit</button>
+                
+              </td>
+            </tr>
+            <!-- Repeat for each member -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+  <div class="edit-form-container">
+    <form class="edit-form">
+      <h2>Edit Member Details</h2>
+      <div class="form-group">
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name">
+      </div>
+      <div class="form-group">
+        <label for="date-of-birth">Date of Birth:</label>
+        <input type="date" id="date-of-birth" name="date-of-birth">
+      </div>
+      <div class="form-group">
+        <label for="email-address">Email Address:</label>
+        <input type="email" id="email-address" name="email-address">
+      </div>
+      <div class="form-group">
+        <label for="phone-number">Phone Number:</label>
+        <input type="tel" id="phone-number" name="phone-number">
+      </div>
+      <div class="form-group">
+        <label for="home-address">Home Address:</label>
+        <textarea id="home-address" name="home-address"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="alt-contact-number">Alternative Contact Number:</label>
+        <input type="tel" id="alt-contact-number" name="alt-contact-number">
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+      </div>
+      <div class="form-group">
+        <label for="payment-method">Payment Method:</label>
+        <select id="payment-method" name="payment-method">
+          <option value="card">Card</option>
+          <option value="paypal">PayPal</option>
+          <option value="cash">Cash</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="announcement-emails">Announcement Emails:</label>
+        <input type="checkbox" id="announcement-emails" name="announcement-emails">
+      </div>
+      <div class="form-group form-actions">
+        <button type="submit" class="btn-save">Save Changes</button>
+        <button type="button" class="btn-cancel">Cancel</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

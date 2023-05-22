@@ -1,0 +1,236 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Styles for Walk events section */
+.walk-events {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+/* Table styles */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #333;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+form label {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+form input[type=text],
+form input[type=date],
+form input[type=time],
+form input[type=number],
+form input[type=submit] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  
+}
+
+form input[type=submit] {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Styles for Other events section */
+.other-events {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+/* Table styles */
+.other-events-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.other-events-table th, 
+.other-events-table td {
+  text-align: left;
+  padding: 8px;
+}
+
+.other-events-table th {
+  background-color: #333;
+  color: #fff;
+}
+
+.other-events-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Form styles */
+.add-other-event-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.add-other-event-form label {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.add-other-event-form input[type=text],
+.add-other-event-form input[type=date],
+.add-other-event-form input[type=time],
+.add-other-event-form input[type=number],
+.add-other-event-form input[type=submit] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  
+}
+
+.add-other-event-form input[type=submit] {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 767px) {
+  /* Set the body font size to 16px and line height to 1.5 */
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* Center the container */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Remove the float from the events and set width to 100% */
+  .walk-events,
+  .other-events {
+    width: 100%;
+    float: none;
+    margin-bottom: 40px;
+  }
+
+  /* Set the event header font size and padding */
+  .walk-events h2,
+  .other-events h2 {
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  /* Set the event item font size and padding */
+  .walk-events .event-item,
+  .other-events .event-item {
+    font-size: 16px;
+    padding: 10px;
+    margin: 0;
+  }
+
+  /* Remove the border and add background color to the form */
+  .walk-events form,
+  .other-events .add-other-event-form {
+    border: none;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  /* Add padding to the form elements */
+  .walk-events form label,
+  .walk-events form input[type=text],
+  .walk-events form input[type=date],
+  .walk-events form input[type=time],
+  .walk-events form input[type=number],
+  .walk-events form input[type=submit],
+  .other-events .add-other-event-form label,
+  .other-events .add-other-event-form input[type=text],
+  .other-events .add-other-event-form input[type=date],
+  .other-events .add-other-event-form input[type=time],
+  .other-events .add-other-event-form input[type=number],
+  .other-events .add-other-event-form input[type=submit] {
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  /* Set a min-width for the form elements */
+  .walk-events form label,
+  .other-events .add-other-event-form label {
+    min-width: 0;
+  }
+
+  /* Set a max-width for the form elements */
+  .walk-events form input[type=text],
+  .walk-events form input[type=date],
+  .walk-events form input[type=time],
+  .walk-events form input[type=number],
+  .walk-events form input[type=submit],
+  .other-events .add-other-event-form input[type=text],
+  .other-events .add-other-event-form input[type=date],
+  .other-events .add-other-event-form input[type=time],
+  .other-events .add-other-event-form input[type=number],
+  .other-events .add-other-event-form input[type=submit] {
+    max-width: 100%;
+  }
+
+  /* Adjust the table width on smaller screens */
+  .other-events .other-events-table {
+    width: 100%;
+  }
+}

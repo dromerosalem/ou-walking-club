@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Announcement Email</title>
+    <link rel="stylesheet" type="text/css" href="q2a.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="header-title">Announcement Email</h1>
+    </header>
+    <main class="main-container">
+      <section class="announcement-section">
+        <h2 class="section-title">Create Announcement Email</h2>
+        <form class="announcement-form">
+          <div class="form-field">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+          <div class="form-field">
+            <label for="sender">Sender's Name:</label>
+            <input type="text" id="sender" name="sender" required>
+          </div>
+          <div class="form-field">
+            <label for="attachment">Attachment:</label>
+            <input type="file" id="attachment" name="attachment">
+          </div>
+          <div class="form-field">
+            <label for="date">Send Date:</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+          <div class="form-field">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div class="hidden-field">
+            <input type="text" id="hidden-field" name="idden-field" value="ee32-ff67-abcd1234-9090">
+          </div>
+          <div class="form-field">
+            <label for="consent">Consent:</label>
+            <input type="checkbox" id="consent" name="consent">
+          </div>
+          <button type="submit" id="send-btn">Send Email</button>
+        </form>
+      </section>
+      <section class="member-list-section">
+        <h2 class="section-title">Member List</h2>
+        <ul class="member-list">
+          <li class="member-item">
+            <span class="member-name">John Doe</span>
+            <span class="member-consent">(Consent Given)</span>
+          </li>
+          <li class="member-item">
+            <span class="member-name">Jane Smith</span>
+            <span class="member-consent">(Consent Given)</span>
+          </li>
+          <li class="member-item">
+            <span class="member-name">Mark Johnson</span>
+            <span class="member-consent">(Consent Not Given)</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+    
+  </body>
+</html>

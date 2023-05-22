@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>   
+<html>  
+<head>
+<link rel="stylesheet" type="text/css" href="news.css">
+<title>News Section</title>
+</head>
+<body>
+  <header>
+    <h1 class="header-title">News Section</h1>
+  </header>
+  <main>
+    <section class="add-news-section">
+      <h2 class="section-title">Add News Item</h2>
+      <form class="add-news-form">
+        <div class="form-field">
+          <label for="full-name">Full Name:</label>
+          <input type="text" id="full-name" name="full-name" required>
+        </div>
+        <div class="form-field">
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" maxlength="5" required>
+        </div>
+        <div class="form-field">
+          <label for="start-date">Start Date:</label>
+          <input type="date" id="start-date" name="start-date" required>
+        </div>
+        <div class="form-field">
+          <label for="end-date">End Date:</label>
+          <input type="date" id="end-date" name="end-date" required>
+        </div>
+        <div class="form-field">
+          <label for="news-content">News Content:</label>
+          <textarea id="news-content" name="news-content" maxlength="250" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Add News Item</button>
+      </form>
+    </section>
+    <section class="current-news">
+      <h2>Current News</h2>
+      <ul>
+        <li>
+          <a href="#">
+            <h3>Lorem Ipsum dolor sit amet</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit faucibus ex, vitae luctus urna vestibulum ut.</p>
+            <p class="read-more">Read more...</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h3>Lorem Ipsum dolor sit amet</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit faucibus ex, vitae luctus urna vestibulum ut.</p>
+            <p class="read-more">Read more...</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h3>Lorem Ipsum dolor sit amet</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit faucibus ex, vitae luctus urna vestibulum ut.</p>
+            <p class="read-more">Read more...</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+</html>
